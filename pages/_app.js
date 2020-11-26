@@ -39,17 +39,20 @@ const GlobalStyle = createGlobalStyle`
 
   header {
     align-items: center;
+    background: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 15px 10px;
     position: sticky;
+    top: 0;
+    z-index: 100;
     & > a:first-of-type {
         border-bottom: 1px solid transparent;
     }
     & > nav {
       display: flex;
       justify-content: space-evenly;
-      width: 80%;
+      width: 60%;
     }
   }
 
@@ -57,9 +60,14 @@ const GlobalStyle = createGlobalStyle`
     border-bottom: 1px solid transparent;
     color: black;
     text-decoration: none;
+    transition: border-bottom 0.2s ease-in-out;
     &:hover {
       border-bottom: 1px solid black;
     }
+  }
+
+  h1 {
+    font-size: 2.8rem;
   }
 `;
 
