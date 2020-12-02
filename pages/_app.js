@@ -29,11 +29,16 @@ const GlobalStyle = createGlobalStyle`
       url("/fonts/Tajawal-Bold.woff") format("woff");
   }
 
+  * {
+    box-sizing: border-box;
+  }
+
   html {
     font-size: 16px;
   }
 
   body {
+    box-sizing: border-box;
     font-family: 'Tajawal', sans-serif;
     margin: auto;
   }
@@ -70,6 +75,15 @@ const GlobalStyle = createGlobalStyle`
   h1 {
     color: white;
     font-size: 2.8rem;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    line-height: 1.5rem;
     text-align: center;
   }
 `;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const PageTitle = styled.div`
-  background-image: linear-gradient(hsla(0deg, 0%, 0%, 0.4), hsla(0deg, 0%, 0%, 0.4)), url(${props => props.url});
+  background-image: linear-gradient(hsla(0deg, 0%, 0%, 0.6), hsla(0deg, 0%, 0%, 0.6)), url(${props => props.url});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,6 +17,7 @@ const PageTitle = styled.div`
   & > p {
     color: white;
     font-weight: 700;
+    text-align: center;
   }
 `;
 
