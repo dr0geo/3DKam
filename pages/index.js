@@ -1,10 +1,10 @@
 import Header from '@/components/Header';
 import PageTitle from '@/components/PageTitle';
 
-const Accueil = () => {
+const Accueil = props => {
   return (
     <>
-      <Header />
+      <Header handleClick={props.handleClick} isClicked={props.isClicked} />
       <main>
         <PageTitle url="/images/accueil.webp">
           <h1>Bienvenue sur 3DKam</h1>

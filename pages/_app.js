@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -41,41 +42,53 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     background: white;
     display: flex;
-    justify-content: center;
-    padding: 15px 10px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    & > a:first-of-type {
-        border-bottom: 1px solid transparent;
-    }
-    & > nav {
-      display: flex;
-      justify-content: space-evenly;
-      width: 60%;
-    }
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 120px;
+    padding: 40px 10px;
+    text-align: center;
+    transition: padding-bottom 0.3s ease-in-out;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 170px;
+    transform-origin: top center;
+    transition: transform 0.3s ease-in-out;
   }
 
   a {
     border-bottom: 1px solid transparent;
     color: black;
+    padding: 10px 0;
     text-decoration: none;
-    transition: border-bottom 0.2s ease-in-out;
-    &:hover {
-      border-bottom: 1px solid black;
-    }
   }
 
   h1 {
+    color: white;
     font-size: 2.8rem;
+    text-align: center;
   }
 `;
 
 export default function App({ Component, pageProps }) {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(() => !isClicked);
+  }
+
   return (
     <>
       <GlobalStyle />
-      <Component {...pageProps} />
+      <Component 
+        handleClick={handleClick} 
+        isClicked={isClicked} 
+        {...pageProps}
+      />
     </>
   );
 }
