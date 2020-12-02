@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const StyledHeader = styled.header`
-  padding-bottom: ${props => props.isClicked ? '300px' : '40px'};
+  padding-bottom: ${props => props.isClicked ? '340px' : '20px'};
 `;
 
 const Nav = styled.nav`

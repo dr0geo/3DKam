@@ -50,7 +50,7 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     justify-content: space-between;
     min-height: 120px;
-    padding: 40px 10px;
+    padding: 20px 10px;
     text-align: center;
     transition: padding-bottom 0.3s ease-in-out;
   }
@@ -85,6 +85,39 @@ const GlobalStyle = createGlobalStyle`
   p {
     line-height: 1.5rem;
     text-align: center;
+  }
+
+  input, textarea {
+    background-color: #2a2a2a;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 15px 20px;
+    transition: border 0.2s ease-in-out;
+    width: 100%;
+    &:focus {
+      border: 2px solid #ebd6d3;
+    }
+    &::placeholder {
+      color: white;
+      font-family: sans-serif;
+      font-size: 0.8rem;
+    }
+  }
+
+  textarea {
+    min-height: 250px;
+    resize: none;
+  }
+
+  button {
+    background-color: #ebd6d3;
+    border: 2px solid #ebd6d3;
+    border-radius: 5px;
+    color: #2a2a2a;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
   }
 `;
 

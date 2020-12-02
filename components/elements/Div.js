@@ -18,4 +18,16 @@ export const PinkSection = styled.section`
 
 export const WhiteSection = styled.section`
   padding: 40px;
+  & > div {
+    text-align: center;
+  }
+`;
+
+export const DarkDiv = styled.section`
+  background-color: #2a2a2a;
+  color: white;
+  padding: 40px;
+  & > div > p > a {
+    color: white;
+  }
 `;

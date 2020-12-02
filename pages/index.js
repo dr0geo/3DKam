@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import Header from '@/components/Header';
 import PageTitle from '@/components/PageTitle';
@@ -7,11 +8,13 @@ import { PinkSection, WhiteSection } from '@/elements/Div';
 import Picture from '@/elements/Picture';
 import { IconCard } from '@/components/elements/Cards';
 import { iconList, services } from '@/lib/data';
+import ContactForm from '@/components/ContactForm';
 
 const Accueil = props => {
   return (
     <>
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <title>3DKam - Graphisme, Design d'intérieur et Web design</title>
       </Head>
       <Header handleClick={props.handleClick} isClicked={props.isClicked} />
@@ -55,6 +58,20 @@ const Accueil = props => {
           ))}
         </PinkSection>
       </main>
+      <footer>
+        <ContactForm />
+        <WhiteSection>
+          <div>
+            <Image 
+              src="/images/logo/linkedin.webp"
+              alt=""
+              height={50}
+              width={50}
+            />
+          </div>
+          <p>© 2020 - Camille Anquetin - 3DKam</p>
+        </WhiteSection>
+      </footer>
     </>
   );
 }
