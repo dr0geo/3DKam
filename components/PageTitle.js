@@ -20,6 +20,14 @@ const PageTitle = styled.div`
     font-weight: 700;
     text-align: center;
   }
+  @media only screen and (min-width: 900px) {
+    & > h1 {
+      font-size: 3.7rem;
+    }
+    & > p {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 export default PageTitle;

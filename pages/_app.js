@@ -79,6 +79,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h2 {
+    font-size: 1.8rem;
     text-align: center;
   }
 
@@ -91,7 +92,9 @@ const GlobalStyle = createGlobalStyle`
     background-color: #2a2a2a;
     border: 2px solid white;
     border-radius: 5px;
+    display: block;
     margin: 10px auto;
+    max-width: 800px;
     padding: 15px 20px;
     transition: border 0.2s ease-in-out;
     width: 100%;
@@ -117,6 +120,7 @@ const GlobalStyle = createGlobalStyle`
     color: #2a2a2a;
     display: block;
     margin: 20px auto;
+    min-width: 140px;
     padding: 10px 20px;
   }
 `;

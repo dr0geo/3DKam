@@ -10,7 +10,8 @@ export const IconCardLayout = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: ${props => props.shadow ? '40px auto' : '15px auto'};
+  margin: ${props => props.shadow ? '40px 20px' : '15px 20px'};
+  max-width: 400px;
   min-height: 360px;
   padding: 20px;
   text-align: center;

@@ -15,6 +15,7 @@ const Nav = styled.nav`
   transform: ${props => props.isClicked ? 'scaleY(1)': 'scaleY(0)'};
   @media only screen and (min-width: 900px) {
     flex-direction: row;
+    max-width: 1400px;
     top: 110px;
     transform: none;
     width: 100%;

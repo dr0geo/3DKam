@@ -11,6 +11,7 @@ export const PinkSection = styled.section`
     font-size: 1.3rem;
     font-weight: 700;
     margin: 20px auto;
+    max-width: 500px;
     padding: 12px 20px 5px 20px;
     text-align: center;
   }
@@ -30,4 +31,12 @@ export const DarkDiv = styled.section`
   & > div > p > a {
     color: white;
   }
+`;
+
+export const FlexDiv = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 1300px;
 `;
