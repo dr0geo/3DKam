@@ -1,0 +1,1 @@
+export default () => <p>Contact</p>

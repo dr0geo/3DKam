@@ -1,0 +1,1 @@
+export default () => <p>Agencement d'intérieur</p>
