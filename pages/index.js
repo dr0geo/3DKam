@@ -14,10 +14,15 @@ const Accueil = props => {
   return (
     <>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Bienvenue sur le site de 3DKam ! Je suis une spécialiste du graphisme, design et aménagement d'intérieur, ainsi que des maquettes pour vos applications et sites web." />
         <title>3DKam - Graphisme, Design d'intérieur et Web design</title>
       </Head>
-      <Header handleClick={props.handleClick} isClicked={props.isClicked} />
+      <Header 
+        handleClick={props.handleClick}
+        isClicked={props.isClicked} 
+        isSelected={0}
+      />
       <main>
         <PageTitle url="/images/accueil.webp">
           <h1>Bienvenue sur 3DKam</h1>

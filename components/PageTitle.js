@@ -16,6 +16,7 @@ const PageTitle = styled.div`
   }
   & > p {
     color: white;
+    font-size: 1.3rem;
     font-weight: 700;
     text-align: center;
   }
